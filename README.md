@@ -1,34 +1,42 @@
 # Supreme Intelligence
 
-A frontier AI product with a source-grounded, governance-aware, evidence-driven architecture.
+A premium frontier AI product built around source-grounded reasoning, provenance, scorecard governance, and trustworthy execution.
 
-## Overview
+## Product goal
 
-This project is being built as a public SaaS and long-horizon platform, not a throwaway prototype. The product goal is to deliver a powerful AI workspace that is truth-aware, source-aware, scorecard-driven, and auditable.
+Build the best AI product in the category: powerful, truthful, auditable, source-aware, and scalable.
 
-## Core principles
+## Mission
 
-- Maximum capability with minimum hidden risk
-- Evidence before claim
-- Provenance before authority
-- Uncertainty before certainty
-- Policy before execution
-- Secure and auditable operations
+Create an AI system that:
+- understands the world with broad capability
+- distinguishes fact from inference
+- grounds claims in evidence and sources
+- surfaces uncertainty honestly
+- maintains a record of provenance and evaluation
+- remains governable and reviewable
+- scales into a real product and platform
 
-## Repository layout
+## Strategic posture
 
-- `apps/web`: web application UI
-- `apps/api`: backend API service
+This is not a toy app. This is a long-horizon AI platform designed to become a trusted operating layer for knowledge work, research, content creation, analysis, and governed automation.
+
+## Architecture
+
+- `apps/web`: user-facing product experience
+- `apps/api`: application interface and backend orchestration
 - `packages/core`: orchestration and business logic
-- `packages/governance`: truth-gate, scoring, policy
-- `packages/provenance`: evidence and ledger work
-- `packages/auth`: authentication and session logic
-- `packages/billing`: subscriptions and billing
-- `docs`: product, governance, launch docs
-- `infra`: deployment config and runtime assets
+- `packages/governance`: truth-gate, scorecard, policy evaluation
+- `packages/provenance`: evidence and ledger services
+- `packages/auth`: login, sessions, permissions
+- `packages/billing`: plans and subscription management
+- `docs`: product and technical documentation
+- `infra`: deployment and platform configuration
 
-## Current status
+## Philosophy
 
-This repo now contains the product specification, compiled architecture, governance docs, and implementation blueprint.
+The product must be capable without being reckless, grounded without being limited, and governed without being weak. The strongest design is the one that can perform at a high level while preserving evidentiary trust and operational control.
 
-The next phase is the real runnable scaffold.
+## Next milestone
+
+Create the first runnable scaffold for the app, API, and governance services.

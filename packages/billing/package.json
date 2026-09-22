@@ -1,0 +1,12 @@
+{
+  "name": "@supreme-intelligence/billing",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "stripe": "^16.12.0"
+  }
+}

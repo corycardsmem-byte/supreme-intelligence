@@ -1,5 +1,4 @@
-.gitignore
-node_modules/
+# Billing configuration
 .env
-.DS_Store
-npm-debug.log*
+.env.*
+!.env.example

@@ -1,0 +1,64 @@
+import express from 'express';
+import { orchestrateRequest } from '@supreme-intelligence/core';
+import { evaluateTruth } from '@supreme-intelligence/governance';
+import { createEvidenceRecord } from '@supreme-intelligence/provenance';
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(express.json());
+
+app.get('/health', (req, res) => {
+  res.json({
+    ok: true,
+    service: 'supreme-intelligence-api',
+    status: 'operational'
+  });
+});
+
+app.post('/chat', async (req, res) => {
+  try {
+    const { message = '' } = req.body || {};
+
+    if (!message.trim()) {
+      return res.status(400).json({ error: 'Message is required.' });
+    }
+
+    const sources = [
+      { source: 'swervincurvin.blogspot.com', type: 'blog-corpus' }
+    ];
+
+    const response = await orchestrateRequest({
+      message,
+      source: sources
+    });
+
+    const governance = evaluateTruth({
+      message,
+      answer: response.answer,
+      sources
+    });
+
+    const evidence = createEvidenceRecord({
+      answer: response.answer,
+      sources,
+      score: governance.score
+    });
+
+    return res.json({
+      answer: response.answer,
+      sources: response.sources,
+      governance,
+      evidence
+    });
+  } catch (error) {
+    return res.status(500).json({
+      error: 'Unable to process request.',
+      detail: error.message
+    });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`API running on http://localhost:${PORT}`);
+});

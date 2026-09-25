@@ -2,14 +2,12 @@
   "name": "supreme-intelligence",
   "private": true,
   "version": "1.0.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "dev:api": "npm --workspace apps/api run dev",
     "dev:web": "npm --workspace apps/web run dev",
     "start:api": "npm --workspace apps/api start",
-    "start:web": "npm --workspace apps/web start"
+    "start:web": "npm --workspace apps/web start",
+    "test": "npm run test --workspaces --if-present"
   }
 }

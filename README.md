@@ -1,42 +1,57 @@
 # Supreme Intelligence
 
-A premium frontier AI product built around source-grounded reasoning, provenance, scorecard governance, and trustworthy execution.
+> **A sovereign, evidence-governed, content-addressed intelligence system.**
 
-## Product goal
+A frontier intelligence platform built around source-grounded reasoning, provenance, formal verification, and trustworthy execution. Supreme Intelligence is designed to investigate, reason, propose, and synthesize while preserving uncertainty and historical accountability.
 
-Build the best AI product in the category: powerful, truthful, auditable, source-aware, and scalable.
+## Governing charter
 
-## Mission
+The system operates under the [Supreme Intelligence Cognitive Charter](docs/COGNITIVE_CHARTER.md) and the versioned Containment Reflexion Audit specification, `cra-symbolic-1.0`.
 
-Create an AI system that:
-- understands the world with broad capability
-- distinguishes fact from inference
-- grounds claims in evidence and sources
-- surfaces uncertainty honestly
-- maintains a record of provenance and evaluation
-- remains governable and reviewable
-- scales into a real product and platform
+Containment Reflexion Audit™ (CRA) is a proprietary brand and protocol owned by Cory Miller, founder and architect of Supreme Intelligence. Ownership governs product intent and architectural direction; technical validity is established independently through formal semantics, proof artifacts, tests, deterministic content addresses, and verified execution.
 
-## Strategic posture
+## Architectural laws
 
-This is not a toy app. This is a long-horizon AI platform designed to become a trusted operating layer for knowledge work, research, content creation, analysis, and governed automation.
+- Capability is not truth; agents propose and verification disposes.
+- The state space is `A × E × C = 9 × 4 × 4 = 144`.
+- `A ↛ E`, `E ↛ C`, and `A ↛ C` are non-entailment constraints.
+- `Ø` is external non-applicability, never a fifth causal state.
+- `UNKNOWN` is a valid epistemic result.
+- History is immutable and content-addressed.
+- Contradictions and revisions create new states linked through typed edges.
+- Governance, implementation, and evidence status remain separate.
 
 ## Architecture
 
 - `apps/web`: user-facing product experience
 - `apps/api`: application interface and backend orchestration
-- `packages/core`: orchestration and business logic
-- `packages/governance`: truth-gate, scorecard, policy evaluation
+- `packages/core`: declarative intent and orchestration logic
+- `packages/epistemic-mesh`: CRA symbolic specification and immutable mesh substrate
+- `packages/cognitive-runtime`: Phase 3 execution-plan and agent-runtime foundation
+- `packages/governance`: truth-gate, scorecard, and policy evaluation
 - `packages/provenance`: evidence and ledger services
-- `packages/auth`: login, sessions, permissions
+- `packages/auth`: login, sessions, and permissions
 - `packages/billing`: plans and subscription management
-- `docs`: product and technical documentation
+- `docs`: product, charter, architecture, and capability documentation
 - `infra`: deployment and platform configuration
 
-## Philosophy
+## Execution model
 
-The product must be capable without being reckless, grounded without being limited, and governed without being weak. The strongest design is the one that can perform at a high level while preserving evidentiary trust and operational control.
+```text
+Intent
+→ declarative cognitive program
+→ adaptive execution compiler
+→ typed agent graph
+→ evidence and tool artifacts
+→ CRA verification
+→ content-addressed mesh commit
+→ evaluation and reactive re-evaluation
+```
 
-## Next milestone
+## Phase 3
 
-Create the first runnable scaffold for the app, API, and governance services.
+Phase 3 design is documented in [the compiler and agent graph architecture](docs/phase-3-cognitive-execution.md). Cross-repository capability findings are recorded in [the workspace inventory](docs/cross-repository-capability-inventory.md).
+
+## Development posture
+
+This is a long-horizon AI platform, not a prompt wrapper. The repository must be evaluated by invariant preservation, evidence lineage, formal verification, reproducibility, and recovery from contradiction—not by fluency alone.
